@@ -8,6 +8,10 @@ public class TextElement extends PageElement {
         super(driver, by);
     }
 
+    public String getText() {
+        return element.getText();
+    }
+
     public void setText(String text) {
         element.sendKeys(text);
     }
